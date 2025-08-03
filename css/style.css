@@ -121,6 +121,10 @@ a {
 }
 .footer-logo {
   height: 50px;
+  width: 150px;
+  max-width: 100px;
+  min-width: 80px;
+
   animation: float 3s ease-in-out infinite;
 }
 
@@ -248,9 +252,46 @@ a {
     right: 20px;
     padding: 1rem;
     border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
   }
 
   .nav-links.show {
     display: flex;
+  }
+}
+
+/* 🔷 Responsive Footer */
+@media (max-width: 320px) {
+  .footer {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .footer-logo-wrapper {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .footer-social a i {
+    font-size: 1.2rem;
+  }
+
+  .footer-copy {
+    font-size: 0.75rem;
+  }
+
+  .footer-logo {
+    max-width: 120px;
+    height: auto;
   }
 }
